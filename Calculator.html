@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Task dd 06.03.2017 Calculator</title>
+</head>
+<body>
+     <script>
+          /*Используя swicth  напишите калькулятор для вычисления следующих операций + - * / % ^.*/
+
+          var a = prompt ("Введите первое число", "");
+          var operator = prompt ("Введите математическую операцию", "");
+          var b = prompt ("Введите второе число", "");
+
+
+          switch (operator) {
+              case '+': alert (a + b); break;
+              case '-': alert (a - b); break;
+              case '*': alert (a * b); break;
+              case '%': alert (a % b); break;
+              case '/':
+                  if (b != 0) {
+                      alert (a / b); break;
+                  }
+                  else {
+                      alert ('Division by zero is forbidden!!!');
+                  }
+          }
+
+      </script>
+
+</body>
+</html>
