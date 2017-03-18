@@ -11,20 +11,22 @@
           var a = prompt ("Введите первое число", "");
           var operator = prompt ("Введите математическую операцию", "");
           var b = prompt ("Введите второе число", "");
-
-
+          a = +a;
+          b = +b;
           switch (operator) {
               case '+': alert (a + b); break;
               case '-': alert (a - b); break;
               case '*': alert (a * b); break;
               case '%': alert (a % b); break;
+              case '^': alert (Math.pow(a, b)); break;
               case '/':
                   if (b != 0) {
                       alert (a / b); break;
                   }
                   else {
-                      alert ('Division by zero is forbidden!!!');
+                      alert ("На ноль делить нельзя!!!");
                   }
+              default: alert("Введите математическую операцию");
           }
 
       </script>
